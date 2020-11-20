@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MatrixXamarinApp.Views.ConfigurationPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Configuration Page" BackgroundColor="Transparent"  TextColor="White" FontSize="Large"/>
+
+        </StackLayout>
+
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout >
+            <Label TextColor="Red" Padding="30,10,0,0" FontSize="Small" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Last Sync: " FontAttributes="Bold"/>
+                        <Span Text="No sync has occured" x:Name="backgroundSync"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <!--<Label TextColor="Red" Padding="30,0,0,0" FontSize="Small" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Full Sync: " FontAttributes="Bold"/>
+                        <Span Text="No sync has occured" x:Name="FullSync"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>-->
+
+            <Button Text="Change View"
+                    TextColor="White"
+                    BackgroundColor="#22A7F0"
+                    x:Name="ChangeView"
+                    Clicked="ChangeView_Clicked"
+                    Margin="15,10,15,20"/>
+            <Button Text="Unregister"
+                    TextColor="Red"
+                    BackgroundColor="#22A7F0"
+                    x:Name="Unregister"
+                    Clicked="Unregister_Clicked"
+                   Margin="15,0,15,20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MatrixXamarinApp.Views.GetFullViewPage2">
+    <ContentPage.Content>
+
+        <ListView  x:Name="viewsListView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <ContentView Padding="20,0,20,0">
+                            <StackLayout Spacing="0">
+                                <!--<Label Text="{Binding MessageId}" TextColor="Gray" FontSize="Micro" HorizontalOptions="StartAndExpand" HeightRequest="100" />-->
+
+                                <Label TextColor="Black" Padding="0,13,0,0" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="To    " FontAttributes="Bold"/>
+                                            <Span Text="{Binding To}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Reply To    " FontAttributes="Bold"/>
+                                            <Span Text="{Binding Reply_To}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Date    " FontAttributes="Bold"/>
+                                            <Span Text="{Binding Date}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="From    " FontAttributes="Bold"/>
+                                            <Span Text="{Binding From}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Subject    " FontAttributes="Bold"/>
+                                            <Span Text="{Binding Subject}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Label  Text="{Binding Body}" TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Html"/>
+                                <Label  Text="{Binding BodyText}" TextColor="Black" FontSize="Small" HorizontalOptions="StartAndExpand" LineBreakMode="WordWrap" TextType="Text"/>
+
+                            </StackLayout>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </ContentPage.Content>
+</ContentPage>

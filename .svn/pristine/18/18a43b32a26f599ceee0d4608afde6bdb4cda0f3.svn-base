@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MatrixXamarinApp.Views.MainMenu">
+    <MasterDetailPage.Master>
+        
+        <ContentPage Icon="hamburger_menu.png" Title="Menu" BackgroundColor="DarkBlue" >
+            <!-- Menu Title background color -->
+
+            <NavigationPage.TitleView>
+                <Button 
+                        TextColor="White"
+                        BackgroundColor="Red"/>
+            </NavigationPage.TitleView>
+
+            <!-- Slide out Menu -->
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Menu" TextColor="White" FontSize="22" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 15, 0, 5" />
+
+                <ListView x:Name="MenuListView" ItemsSource="{Binding MainMenuItems}" ItemSelected="MainMenuItem_Selected" VerticalOptions="FillAndExpand" SeparatorVisibility="None" BackgroundColor="#f5f5f5">
+                    <!-- Menu background color -->
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" TextColor="red"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Configuration"
+                    TextColor="Red"
+                    BackgroundColor="DarkBlue"
+                    x:Name="ConfigButton"
+                    Clicked="ConfigButton_Clicked"
+                    VerticalOptions="EndAndExpand"
+                    Margin="50,0,50,0"
+                    FontSize="Large"/>
+                <Label TextColor="OrangeRed" Padding="30,0,0,10" FontSize="Small" VerticalOptions="EndAndExpand" LineBreakMode="WordWrap" TextType="Text">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Last Sync: " FontAttributes="Bold"/>
+                            <Span Text="No sync has occured" x:Name="backgroundSync"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+   
+</MasterDetailPage>

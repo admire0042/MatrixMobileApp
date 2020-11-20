@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MatrixXamarinApp.Views.container">
+    <ContentPage.Content>
+        <ListView x:Name="ShipToListView" ItemsSource="{Binding ScannedContainers}" HorizontalOptions="Center" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell x:Name="viewCell" >
+                        <ViewCell.View>
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0" RowSpacing="0" ColumnSpacing="0">
+                                
+                                <!--<Switch IsToggled="{Binding IsSelected}" IsVisible="True"  OnColor="Blue" ></Switch>-->
+                                <CheckBox IsChecked="{Binding IsSelected}" ></CheckBox>
+                                <Label Text="{Binding ViewName}" Grid.Column="1" Grid.Row="4"/>
+                                <Label Text="{Binding ViewID}" Grid.Column="1" Grid.Row="4"/>
+                            </Grid>
+
+                        </ViewCell.View>
+                        <!--<ViewCell.ContextActions>
+                            <MenuItem BindingContext="{Binding Source={x:Reference ShipToListView},Path=BindingContext}"  Command="{Binding DeleteItemCommand}" CommandParameter="{Binding  Source={x:Reference viewCell},Path=BindingContext}"  Text="Delete"  IsDestructive="True"/>
+                        </ViewCell.ContextActions>-->
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
+

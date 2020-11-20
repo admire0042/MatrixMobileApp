@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MatrixXamarinApp.Views.ViewsMessageListPage2">
+    <!--<NavigationPage.TitleView>
+
+        <Button  Text="Change View" BackgroundColor="Transparent"  FontAttributes="Bold" FontSize="16" 
+                 TextColor="Purple" HeightRequest="70" WidthRequest="10" Clicked="Change_View_Clicked"/>
+    </NavigationPage.TitleView>-->
+
+    <ContentPage.Content>
+
+
+        <ListView x:Name="ViewMessageListView">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <TextCell Text="{Binding INC}"
+                              Detail="{Binding OUT}"
+                              DetailColor="Blue"
+                              TextColor="Teal"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

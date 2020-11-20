@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MatrixXamarinApp.Views.RegisterPage">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="30"
+             Margin="20,20,20,0"
+             VerticalOptions="Start">
+            <Label Text="Register"
+          HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+            <Entry Text=""
+             Placeholder="Url"
+          x:Name="EntryUrl"/>
+            <Entry Text=""
+             Placeholder="Username"      
+          x:Name="EntryUsername"/>
+            <Entry Text=""
+             Placeholder="oTP"    
+          x:Name="EntryPassword"/>
+
+            <Button Text="Register"
+        TextColor="White"
+        BackgroundColor="#22A7F0"
+        x:Name="ButtonLogin"
+                    Clicked="ButtonLogin_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
