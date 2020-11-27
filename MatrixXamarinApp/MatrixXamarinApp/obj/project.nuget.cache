@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bVmLh0VGL45tNllh8mU0C62oQI3/s7kUsZuXuCIY3IrD+3uK9Pm1tvnKUcA2AU9ShHDH9l5Tbl+Eu6kOnp1jEA==",
+  "dgSpecHash": "LL9hqJngQbDeH2Aa+RbPunItz7U/kgerxWJ+3eLg9bsIfY6hMoWIuUVfaUAWCfocBbK6Vn6jJEJkXBFDoOx2Wg==",
   "success": true,
   "projectFilePath": "C:\\MatrixMobileApp\\MatrixXamarinApp\\MatrixXamarinApp\\MatrixXamarinApp.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,7 @@
     "C:\\Users\\oluso\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
+    "C:\\Users\\oluso\\.nuget\\packages\\xamarin.forms.extended.infinitescrolling\\1.0.0-preview2\\xamarin.forms.extended.infinitescrolling.1.0.0-preview2.nupkg.sha512",
     "C:\\Users\\oluso\\.nuget\\packages\\xamarin.forms.inputkit\\3.4.3\\xamarin.forms.inputkit.3.4.3.nupkg.sha512"
   ],
   "logs": [

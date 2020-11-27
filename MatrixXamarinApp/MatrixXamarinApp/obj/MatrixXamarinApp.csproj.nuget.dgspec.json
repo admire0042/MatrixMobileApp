@@ -125,6 +125,10 @@
               "target": "Package",
               "version": "[4.5.0.495, )"
             },
+            "Xamarin.Forms.Extended.InfiniteScrolling": {
+              "target": "Package",
+              "version": "[1.0.0-preview2, )"
+            },
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[3.4.3, )"

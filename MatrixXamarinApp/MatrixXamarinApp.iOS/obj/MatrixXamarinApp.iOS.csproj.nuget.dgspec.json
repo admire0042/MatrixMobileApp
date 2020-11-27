@@ -102,6 +102,10 @@
               "target": "Package",
               "version": "[4.5.0.495, )"
             },
+            "Xamarin.Forms.Extended.InfiniteScrolling": {
+              "target": "Package",
+              "version": "[1.0.0-preview2, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.4.118, )"
@@ -241,6 +245,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.5.0.495, )"
+            },
+            "Xamarin.Forms.Extended.InfiniteScrolling": {
+              "target": "Package",
+              "version": "[1.0.0-preview2, )"
             },
             "Xamarin.Forms.InputKit": {
               "target": "Package",
